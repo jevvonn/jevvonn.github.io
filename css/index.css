@@ -1,0 +1,131 @@
+* {
+  --shadow-box: 0.4rem 0.4rem 0 #222;
+  --ibm-plex: "IBM Plex Mono", monospace;
+  --comforta: "Comfortaa", cursive;
+}
+
+.box {
+  font-family: var(--ibm-plex);
+  border: none;
+  box-shadow: var(--shadow-box);
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+.wrapper .header {
+  font-family: var(--comforta);
+  text-align: center;
+}
+
+.wrapper .header img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+.wrapper .header .btn-header button {
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.wrapper .header .btn-header button:nth-child(1) {
+  background-color: #ffae6d;
+}
+.wrapper .header .btn-header button:nth-child(2) {
+  background-color: #f3e0b5;
+}
+
+.bio {
+  width: 500px;
+}
+
+.bio .box {
+  background-color: #fecd70;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about {
+  font-family: var(--ibm-plex);
+}
+.about h2 {
+  text-align: center;
+}
+
+.about .about-content {
+  display: flex;
+  gap: 20px;
+}
+
+.about .about-content .hobby,
+.about .about-content .songs {
+  width: 500px;
+  font-size: 20px;
+}
+
+.about .about-content .hobby {
+  background-color: #f3e0b5;
+}
+.about .about-content .songs {
+  background-color: #ffae6d;
+}
+
+.about .about-content .hobby ul,
+.about .about-content .songs ol {
+  cursor: pointer;
+}
+
+.about .about-content .hobby ul li a:hover,
+.about .about-content .songs ol li a:hover {
+  text-decoration: underline;
+}
+
+.about .about-content .hobby ul li a,
+.about .about-content .songs ol li a {
+  color: black;
+  text-decoration: none;
+}
+
+.info-hobby img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.info-hobby {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3e0b5;
+  text-align: justify;
+}
+
+.box-back a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.box-back a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-family: var(--ibm-plex);
+  font-size: 15px;
+}
